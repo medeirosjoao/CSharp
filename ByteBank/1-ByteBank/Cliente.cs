@@ -9,18 +9,18 @@ namespace _1_ByteBank
 {
     public class Cliente
     {
-        public string nome;
-        public string cpf;
-        public string profissao;
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public string Profissao { get; set; }
 
         //public int agencia;
         //public int numero;
         //public double saldo;
         public Cliente(string nome, string cpf, string profissao)
         {
-            this.nome = nome;
-            this.cpf = cpf;
-            this.profissao= profissao;
+            Nome = nome;
+            CPF = cpf;
+            Profissao = profissao;
         }
     }
 }
