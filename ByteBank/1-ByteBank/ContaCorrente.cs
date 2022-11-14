@@ -7,13 +7,15 @@
         public int Numero { get; set; }
 
         private double _saldo = 100;
+        public static int TotalContasCriadas { get; private set; }
 
         public ContaCorrente(Cliente titular, int agencia, int numero, double saldo)
         {
             Titular = titular;
             Agencia = agencia;
             Numero = numero;
-            Saldo = saldo;              
+            Saldo = saldo;
+            TotalContasCriadas += 1;
         }
 
         public bool Sacar(double valor)
