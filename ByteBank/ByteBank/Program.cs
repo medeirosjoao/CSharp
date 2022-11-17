@@ -9,22 +9,28 @@ internal class Program
 
         GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
 
-        Funcionario carlos = new Funcionario();       
+        Funcionario carlos = new Funcionario(2000, "123.456.789.00");       
         carlos.Nome = "Carlos";
-        carlos.CPF = "123.456.789.00";
-        carlos.Salario = 2000;
-        gerenciador.Registrar(carlos);
+        carlos.AumentarSalario();
+        Console.WriteLine("Novo salário do Carlos é " + carlos.Salario);
 
-        Diretor roberta = new Diretor();
+        gerenciador.Registrar(carlos);
+        Console.WriteLine(Funcionario.TotalDeFuncionarios);
+
+        Diretor roberta = new Diretor("321.345.123.98");
         roberta.Nome = "Roberta";
-        roberta.CPF = "321.345.123.98";
-        roberta.Salario = 5000;
+        roberta.AumentarSalario();
+        Console.WriteLine("Novo salário da Roberta é " + roberta.Salario);
+
         gerenciador.Registrar(roberta);
+        Console.WriteLine(Funcionario.TotalDeFuncionarios);
 
         Console.WriteLine(carlos.Nome);
+        Console.WriteLine(carlos.CPF);
         Console.WriteLine(carlos.GetBonificacao());
 
         Console.WriteLine(roberta.Nome);
+        Console.WriteLine(roberta.CPF);
         Console.WriteLine(roberta.GetBonificacao());
         Console.WriteLine("Total de bonificações: " + gerenciador.GetTotalBonificacao());
 
