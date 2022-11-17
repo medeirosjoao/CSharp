@@ -1,38 +1,48 @@
-﻿
-using ByteBank;
-using ByteBank.Funcionarios;
+﻿using ByteBank.Funcionarios;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-internal class Program
+namespace ByteBank
 {
-    private static void Main(string[] args)
+    class Program
     {
+        static void Main(string[] args)
+        {
+            CalcularBonificacao(); 
 
-        GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
+            Console.ReadLine(); 
+        }
 
-        Funcionario carlos = new Funcionario(2000, "123.456.789.00");       
-        carlos.Nome = "Carlos";
-        carlos.AumentarSalario();
-        Console.WriteLine("Novo salário do Carlos é " + carlos.Salario);
+        public static void CalcularBonificacao() 
+        {
+            GerenciadorBonificacao gerenciadorBonificacao = new GerenciadorBonificacao();
 
-        gerenciador.Registrar(carlos);
-        Console.WriteLine(Funcionario.TotalDeFuncionarios);
+            Funcionario pedro = new Designer("833.222.048-39");
+            pedro.Nome = "Pedro";
 
-        Diretor roberta = new Diretor("321.345.123.98");
-        roberta.Nome = "Roberta";
-        roberta.AumentarSalario();
-        Console.WriteLine("Novo salário da Roberta é " + roberta.Salario);
+            Funcionario roberta = new Diretor("159.753.398-04");
+            roberta.Nome = "Roberta";
 
-        gerenciador.Registrar(roberta);
-        Console.WriteLine(Funcionario.TotalDeFuncionarios);
+            Funcionario igor = new Auxiliar("981.198.778-53");
+            igor.Nome = "Igor";
 
-        Console.WriteLine(carlos.Nome);
-        Console.WriteLine(carlos.CPF);
-        Console.WriteLine(carlos.GetBonificacao());
+            Funcionario camila = new GerenteDeConta("326.985.628-89");
+            camila.Nome = "Camila";
 
-        Console.WriteLine(roberta.Nome);
-        Console.WriteLine(roberta.CPF);
-        Console.WriteLine(roberta.GetBonificacao());
-        Console.WriteLine("Total de bonificações: " + gerenciador.GetTotalBonificacao());
+            Desenvolvedor guilherme = new Desenvolvedor("456.175.468-20"); 
+            guilherme.Nome = "Guilherme"; 
 
+            gerenciadorBonificacao.Registrar(guilherme);
+            gerenciadorBonificacao.Registrar(pedro);
+            gerenciadorBonificacao.Registrar(roberta);
+            gerenciadorBonificacao.Registrar(igor);
+            gerenciadorBonificacao.Registrar(camila);
+
+            Console.WriteLine("Total de bonificações do mês " +
+                gerenciadorBonificacao.GetTotalBonificacao());
+        }
     }
 }
