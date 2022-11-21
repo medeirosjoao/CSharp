@@ -38,10 +38,14 @@ namespace ByteBank
 
         public ContaCorrente(int agencia, int numero)
         {
-            if (agencia <= 0 || numero <= 0)
+            if (agencia <= 0)
             {
-                ArgumentException exception = new ArgumentException("A agência e o Número não podem ser 0")
-; throw exception;
+                throw new ArgumentException("O Argumento agência deve ser maior que 0", nameof(agencia));
+                //Console.WriteLine(Titular.Nome);
+            }
+            if (numero <= 0)
+            {
+                throw new ArgumentException("O Argumento numero deve ser maior que  0", nameof(numero));
                 //Console.WriteLine(Titular.Nome);
             }
             Agencia = agencia;

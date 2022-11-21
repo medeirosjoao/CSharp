@@ -14,12 +14,14 @@ namespace ByteBank
             {
                 ContaCorrente conta = new ContaCorrente(0, 0);
             }
-            catch (ArgumentException ex ){ 
-            Console.WriteLine(ex.Message);
+            catch (ArgumentException ex)
+            {
+               //Console.WriteLine("Erro no parâmetro " + ex.ParamName);
+                Console.WriteLine("ex.Message " + ex.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+               // Console.WriteLine("ex.Message " + ex.Message);
             }
 
             Console.ReadLine();
