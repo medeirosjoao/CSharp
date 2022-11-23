@@ -1,0 +1,11 @@
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.AssemblyReference.cache
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.SuggestedBindingRedirects.cache
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.CoreCompileInputs.cache
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.exe.config
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.exe
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.pdb
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.dll
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.pdb
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.CopyComplete
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.exe
+D:\CSharp\Parte5\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.pdb
