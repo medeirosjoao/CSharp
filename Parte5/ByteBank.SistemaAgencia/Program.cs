@@ -1,9 +1,10 @@
-﻿using ByteBank.Modelos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ByteBank.Modelos;
+using ByteBank.Modelos.Funcionarios;
 
 namespace ByteBank.SistemaAgencia
 {
@@ -11,9 +12,12 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            ContaCorrente conta = new ContaCorrente(374, 3627362);
-            Console.WriteLine(conta.Numero);
+            ContaCorrente conta = new ContaCorrente(847, 489754);
 
+
+            FuncionarioAutenticavel carlos = null;
+
+            Console.WriteLine(conta.Numero);
 
             Console.ReadLine();
         }

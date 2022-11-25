@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Estagiario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ByteBank.Modelos\ByteBank.Modelos.csproj">
-      <Project>{C2175F0D-7024-465E-947F-C0FB51887A9C}</Project>
+      <Project>{c2175f0d-7024-465e-947f-c0fb51887a9c}</Project>
       <Name>ByteBank.Modelos</Name>
     </ProjectReference>
   </ItemGroup>
