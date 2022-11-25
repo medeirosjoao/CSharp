@@ -1,3 +1,4 @@
+D:\CSharp\Parte5\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.xml
 D:\CSharp\Parte5\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.dll
 D:\CSharp\Parte5\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.pdb
 D:\CSharp\Parte5\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.AssemblyReference.cache
