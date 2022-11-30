@@ -28,7 +28,7 @@ namespace ByteBank.SistemaAgencia
             // 879.546.120-20
             // 879546120-20
 
-            string textoDeTeste = "idyufdgfugfjksdhf 99871-5456 sdjkfgsdjgsjgh sfsdjgsdjghsdfj";
+            string textoDeTeste = "idyufdgfugfjksdhf 99871--5456 sdjkfgsdjgsjgh sfsdjgsdjghsdfj";
 
             Match resultado = Regex.Match(textoDeTeste, padrao);
 
@@ -37,105 +37,112 @@ namespace ByteBank.SistemaAgencia
 
 
 
-            //string urlTeste = "https://www.bytebank.com/cambio";
-            //int indiceByteBank = urlTeste.IndexOf("https://www.bytebank.com");
 
 
-            //Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com"));
-            //Console.WriteLine(urlTeste.EndsWith("cambio/"));
 
 
-            //Console.WriteLine(urlTeste.Contains("ByteBank"));
+
+            string urlTeste = "https://www.bytebank.com/cambio";
+            int indiceByteBank = urlTeste.IndexOf("https://www.bytebank.com");
+
+
+
+
+            Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com"));
+            Console.WriteLine(urlTeste.EndsWith("cambio/"));
+
+
+            Console.WriteLine(urlTeste.Contains("ByteBank"));
 
             
-            //Console.ReadLine();
+            Console.ReadLine();
 
-            //// pagina?argumentos
-            //// 012345678
-
-
-
-            ////moedaOrigem=real&moedaDestino=dolar
-            ////          |
-            ////  -------´
-
-            //string urlParametros = "http://www.bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&valor=1500";
-            //ExtratorValorDeArgumentosURL extratorDeValores = new ExtratorValorDeArgumentosURL(urlParametros);
-
-            //string valor = extratorDeValores.GetValor("moedaDestino");
-            //Console.WriteLine("Valor de moedaDestino: " + valor);
-
-            //string valorMoedaOrigem = extratorDeValores.GetValor("moedaOrigem");
-            //Console.WriteLine("Valor de moedaOrigem: " + valorMoedaOrigem);
-
-            //Console.WriteLine(extratorDeValores.GetValor("VALOR"));
-
-            //Console.ReadLine();
+            // pagina?argumentos
+            // 012345678
 
 
 
-            ////Testando ToLower
-            //string mensagemOrigem = "PALAVRA";
-            //string termoBusca = "ra";
+            //moedaOrigem=real&moedaDestino=dolar
+            //          |
+            //  -------´
 
-            //Console.WriteLine(mensagemOrigem.ToLower());
+            string urlParametros = "http://www.bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&valor=1500";
+            ExtratorValorDeArgumentosURL extratorDeValores = new ExtratorValorDeArgumentosURL(urlParametros);
 
+            string valor = extratorDeValores.GetValor("moedaDestino");
+            Console.WriteLine("Valor de moedaDestino: " + valor);
 
-            //// Testando Replace
-            //termoBusca = termoBusca.Replace('r', 'R');
-            //Console.WriteLine(termoBusca);
+            string valorMoedaOrigem = extratorDeValores.GetValor("moedaOrigem");
+            Console.WriteLine("Valor de moedaOrigem: " + valorMoedaOrigem);
 
-            //termoBusca = termoBusca.Replace('a', 'A');
-            //Console.WriteLine(termoBusca);
+            Console.WriteLine(extratorDeValores.GetValor("VALOR"));
 
-            //Console.WriteLine(mensagemOrigem.IndexOf(termoBusca));
-            //Console.ReadLine();
-
-            //// Testando o método Remove
-            //string testeRemocao = "primeiraParte&123456789";
-            //int indiceEComercial = testeRemocao.IndexOf('&');
-            //Console.WriteLine(testeRemocao.Remove(indiceEComercial, 4));
-            //Console.ReadLine();
-
-
-            //// <nome>=<valor>
-            //string palavra = "moedaOrigem=moedaDestino&moedaDestino=dolar";
-            //string nomeArgumento = "moedaDestino=";
-
-            //int indice = palavra.IndexOf(nomeArgumento);
-            //Console.WriteLine(indice);
-
-            //Console.WriteLine("Tamanho da string nomeArgumento: " + nomeArgumento.Length);
-
-            //Console.WriteLine(palavra);
-            //Console.WriteLine(palavra.Substring(indice));
-            //Console.WriteLine(palavra.Substring(indice + nomeArgumento.Length));
-            //Console.ReadLine();
+            Console.ReadLine();
 
 
 
+            //Testando ToLower
+            string mensagemOrigem = "PALAVRA";
+            string termoBusca = "ra";
+
+            Console.WriteLine(mensagemOrigem.ToLower());
 
 
-            //// Testando o IsNullOrEmpty
-            //string textoVazio = "";
-            //string textoNulo = null;
-            //string textoQualquer = "kjhfsdjhgsdfjksdf";
-            //Console.WriteLine(String.IsNullOrEmpty(textoVazio));
-            //Console.WriteLine(String.IsNullOrEmpty(textoNulo));
-            //Console.WriteLine(String.IsNullOrEmpty(textoQualquer));
-            //Console.ReadLine();
+            // Testando Replace
+            termoBusca = termoBusca.Replace('r', 'R');
+            Console.WriteLine(termoBusca);
 
-            //ExtratorValorDeArgumentosURL extrator = new ExtratorValorDeArgumentosURL("");
+            termoBusca = termoBusca.Replace('a', 'A');
+            Console.WriteLine(termoBusca);
 
-            //string url = "pagina?moedaOrigem=real&moedaDestino=dolar";
+            Console.WriteLine(mensagemOrigem.IndexOf(termoBusca));
+            Console.ReadLine();
 
-            //int indiceInterrogacao = url.IndexOf('?');
+            // Testando o método Remove
+            string testeRemocao = "primeiraParte&123456789";
+            int indiceEComercial = testeRemocao.IndexOf('&');
+            Console.WriteLine(testeRemocao.Remove(indiceEComercial, 4));
+            Console.ReadLine();
 
-            //Console.WriteLine(indiceInterrogacao);
 
-            //Console.WriteLine(url);
-            //string argumentos = url.Substring(indiceInterrogacao + 1);
-            //Console.WriteLine(argumentos);
+            // <nome>=<valor>
+            string palavra = "moedaOrigem=moedaDestino&moedaDestino=dolar";
+            string nomeArgumento = "moedaDestino=";
+
+            int indice = palavra.IndexOf(nomeArgumento);
+            Console.WriteLine(indice);
+
+            Console.WriteLine("Tamanho da string nomeArgumento: " + nomeArgumento.Length);
+
+            Console.WriteLine(palavra);
+            Console.WriteLine(palavra.Substring(indice));
+            Console.WriteLine(palavra.Substring(indice + nomeArgumento.Length));
+            Console.ReadLine();
+
+
+
+
+
+            // Testando o IsNullOrEmpty
+            string textoVazio = "";
+            string textoNulo = null;
+            string textoQualquer = "kjhfsdjhgsdfjksdf";
+            Console.WriteLine(String.IsNullOrEmpty(textoVazio));
+            Console.WriteLine(String.IsNullOrEmpty(textoNulo));
+            Console.WriteLine(String.IsNullOrEmpty(textoQualquer));
+            Console.ReadLine();
+
+            ExtratorValorDeArgumentosURL extrator = new ExtratorValorDeArgumentosURL("");
+
+            string url = "pagina?moedaOrigem=real&moedaDestino=dolar";
+
+            int indiceInterrogacao = url.IndexOf('?');
+
+            Console.WriteLine(indiceInterrogacao);
+
+            Console.WriteLine(url);
+            string argumentos = url.Substring(indiceInterrogacao + 1);
+            Console.WriteLine(argumentos);
         }
     }
 
