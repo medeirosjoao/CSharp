@@ -1,0 +1,8 @@
+D:\CSharp\Parte9\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.exe.config
+D:\CSharp\Parte9\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.exe
+D:\CSharp\Parte9\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.pdb
+D:\CSharp\Parte9\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.csproj.AssemblyReference.cache
+D:\CSharp\Parte9\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.csproj.SuggestedBindingRedirects.cache
+D:\CSharp\Parte9\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.csproj.CoreCompileInputs.cache
+D:\CSharp\Parte9\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.exe
+D:\CSharp\Parte9\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.pdb
